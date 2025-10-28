@@ -28,7 +28,9 @@
   --h5: 1.7rem;
   --h6: 1.2rem;
 
-  /*COLOR STYLES*/
+  /*BUTTON STYLES*/
+
+
 }
 
 body {
@@ -38,11 +40,25 @@ body {
   align-items: center;
   justify-content: center;
   font-family: "Inter", sans-serif;
+  gap: 28px;
 }
+
+.buttonPrimary{
+  background-color: var(--buttonPrimary);
+  color: var(--neutralPrimary);
+  padding: 16px 24px;
+  border: none;
+  border-radius: 9px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
 
 #section {
   width: 100%;
-  padding: 96px 200px;
+  padding: 56px 200px;
 }
 
 /*HERO SECTION */
@@ -86,8 +102,8 @@ body {
   border-radius: 100px;
   align-items: center;
 }
-.heroinputwrapper :active{
-    width: 100%;
+.heroinputwrapper :active {
+  width: 100%;
   display: flex;
   flex-direction: row;
   column-gap: 16px;
@@ -163,46 +179,201 @@ body {
 /*populardestinationssection*/
 
 .populardestinationssection {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    row-gap: 52px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 52px;
+  padding: 20px 0;
+}
+
+#section h2 {
+  font-size: var(--h2);
+  font-weight: 500;
+  letter-spacing: -3.9px;
+}
+
+.populardestinations {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.destinationCards img {
+  width: 305px;
+  height: auto;
+  border-radius: 32px;
+}
+
+.destinationCards {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.destinationCards h4 {
+  font-size: var(--h5);
+  font-weight: 650;
+  letter-spacing: -1.8px;
+}
+
+/*ourServicesCardsContainer*/
+
+.ourservicessection {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  justify-content: center;
+}
+
+.ourServicesCardsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+  background-color: var(--neutralSecondary);
+  padding: 20px 20px;
+  border-radius: 20px;
+}
+
+.ourServicesCard {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: space-between;
+  background-color: var(--neutralPrimary);
+  padding: 16px 16px;
+  border-radius: 20px;
+}
+
+.ourServicesCard img {
+  width: 59px;
+}
+
+/* WHY CHOOSE US SECTION */
+.whychooseussection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.leftchoosesection {
+  width: 564px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+  align-items: start;
+}
+
+.bottomleftchoosesection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+}
+
+.bottomleftchoosesectioncards {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: center;
 }
 
 
-#section h2{
-    font-size: var(--h2);
-    font-weight: 500;
-    letter-spacing: -3.9px;
+.rightbottomleftchoosesectioncards{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.bottomleftchoosesectioncards h3{
+ font-size: var(--h5);
 }
 
 
-.populardestinations{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-.destinationCards img{
-    width: 305px;
-    height: auto;
-    border-radius: 32px;
+
+.rightchoosesection img {
+  width: 550px;
+  height: auto;
+  border-radius: 20px;
+
 }
 
-.destinationCards{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+
+
+
+
+/*TESTIMONIAL SECTION*/
+
+.whatclientsayaboutus{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
 }
 
-.destinationCards h4{
-    font-size: var(--h5);
-    font-weight: 650;
-    letter-spacing: -1.8px;
-    
+.testimonialSection{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  gap: 120px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+background: linear-gradient(90deg, #FFF 0%, #E9F5FE 100%);
+padding: 20px 44px;
+}
+
+.lefttestimonialsection img{
+  border-radius: 20px;
+}
+
+.righttestimonialsection{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: start;
+  justify-content: center;
+}
+
+
+
+/* joincommunitysection */
+.joincommunitysection{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.topjoincommunitysection{
+   display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: center;
+  justify-content: center;
+}
+
+.topjoincommunitysection p{
+  color: var(--travelagency-Text-primary, #292929);
+text-align: center;
+font-size: 20px;
+line-height: normal;
+letter-spacing: -0.6px;
+
+}
+
+.joincommunitysectionimage{
+  width: 976px;
+height: 448px;
+aspect-ratio: 61/28;
 }
